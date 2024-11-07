@@ -306,6 +306,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   letter-spacing: .8px;
   display: flex;
   align-items: center;
+  /* lets connect button */
 }
 
 .banner button svg {
@@ -341,7 +342,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 
 /*Skills Css*/
 .skill {
-  padding: 0 0 3.125rem 0;
+  padding: 0 0 50px 0;
   position: relative;
 }
 
@@ -349,12 +350,12 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 3.75rem 3.125rem;
-  margin-top: -3.75rem;
+  padding: 60px 60px;
+  margin-top: -60px;
 }
 
 .skill h2 {
-  font-size: 2.8125em;
+  font-size: 45px;
   font-weight: 700;
 }
 
@@ -363,7 +364,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
   font-size: 1.125em;
   letter-spacing: .8px;
   line-height: 1.5em;
-  margin: 0.875rem 0 4.6875rem 0;
+  margin: 14px 0 75px 0;
 }
 
 .skill-slider {
@@ -374,7 +375,7 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 
 .skill-slider .item img {
   width: 50%;
-  margin: 0 auto 0.9375rem auto;
+  margin: 0 auto 15px auto;
 }
 
 .background-image-left {
@@ -531,5 +532,90 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 }
 
 /*Projects Css*/
-
 /*Footer Css*/
+.footer {
+  padding: 0 0 3.125rem 0;
+  background-image: url('./assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.newsletter-bx {
+  background: #fff;
+  border-radius: 55px;
+  color: #111111;
+  padding: 5.3125rem 7.8125rem;
+  margin-bottom: 5rem;
+  margin-top: -7.625rem;
+}
+
+.newsletter-bx h3 {
+  font-weight: 700;
+  letter-spacing: .5px;
+  line-height: 1.2em;
+}
+
+.new-email-bx {
+  background: #fff;
+  padding: 0.3125rem;
+  border-radius: 20px;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+}
+
+.new-email-bx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  top: -0.0625rem;
+  left: -0.0625rem;
+  bottom: -0.0625rem;
+  right: -0.0625rem;
+}
+
+.new-email-bx::after {
+  content: "";
+  background: #fff;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.new-email-bx input {
+  width: 100%;
+  color: #111111;
+  font-weight: 500;
+  background: transparent;
+  border: 0;
+  padding: 0 0.9375rem;
+}
+
+.new-email-bx button {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 1.25rem 4.0625rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: .5px;
+  border-radius: 18px;
+}
+
+.footer img {
+  width: 26%;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 0.875em;
+  color: #B8B8B8;
+  letter-spacing: .5px;
+  margin-top: 1.25rem;
+}
