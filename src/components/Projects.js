@@ -2,7 +2,8 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import Daystar from "../assets/img/Daystar.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+// import projImg3 from "../assets/img/project-img3.png";
+import uplift from "../assets/img/uplift.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -12,19 +13,19 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Daystar Daycare",
+      description: "Daycare Management",
       imgUrl: Daystar,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Refactory Information Management System",
+      description: "RIMS",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
+      title: "Uplift",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: uplift,
     },
   ];
 

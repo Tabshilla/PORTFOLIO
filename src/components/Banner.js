@@ -1,7 +1,8 @@
 import { useState, useEffect  } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+// import headerImg from "../assets/img/header-img.svg";
+import tabshilla from "../assets/img/tabshilla.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -9,7 +10,7 @@ import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Web Developer", "Web Designer", "UI/UX", "Scrum Master"];
+    const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer", "Product Manager"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -44,10 +45,6 @@ export const Banner = () => {
         }
     }
 
-
-
-
-
     return (
         <section className="banner" id="home">
             <Container>
@@ -64,7 +61,8 @@ export const Banner = () => {
                         </TrackVisibility>
                      </Col>
                      <Col xs={12} md={6} xl={5}></Col>
-                     <img src={headerImg} alt="Header Img" />
+                     {/* <img src={headerImg} alt="Header Img" /> */}
+                     <img src={tabshilla} alt="tabshilla.jpg" />
                 </Row>
             </Container>
 

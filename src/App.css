@@ -80,6 +80,12 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
+@media (min-width: 768px) {
+  .banner img {
+    max-width: 250px; /* Slightly larger for medium to large screens */
+  }
+}
+
 p.success {
   color: green;
 }
@@ -321,21 +327,13 @@ nav.navbar .navbar-toggler[arie-expand="true"] .navbar-toggler-icon {
 }
 
 .banner img {
-  animation: updown 3s linear infinite;
+  max-width: 200px; /* Adjust to the desired width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 100%; /* Make the image circular */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  margin: 6rem auto; /* Center the image */
+  display: block; /* Ensures it's centered within its container */
 }
-
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
-}
-
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
